@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    padding: 20px;
+    margin: 10% auto;
+    background-color: gray;
+    border: 4px solid white;
+    border-radius: 10px 30px;
+    box-shadow: 0 0 10px 5px black;
+}
+h1{
+    margin: 20px;
+    text-align: center;
+    padding-left: 15px;
+    color: rgb(223, 238, 195);
+    text-shadow: 0 0 5px black;
+}
+label{
+    padding-right: 10px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+label:hover{
+    text-shadow: 0 0 5px rgb(223, 238, 195);
+}
+input{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+}
+input[placeholder="put (number)"]{
+    padding-left: 15px;
+}
+input[name="number_one"]:hover,
+input[name="number_two"]:hover{
+    background-color: rgb(175, 175, 175);
+    border: 2px solid rgb(223, 238, 195);
+}
+button{
+    width: 50px;
+    height: 50px;
+    margin: 30px 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+button:hover{
+    border: 2px solid rgb(102, 133, 46); 
+    background-color: rgb(223, 238, 195);
+    color: rgb(11, 37, 4);
+}
+.btn{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+    align-content: center;
+}
+h2{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(223, 238, 195);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+input[name="result"]{
+    position: relative;
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: grab;
+}
