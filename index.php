@@ -37,11 +37,11 @@ switch ($amaliyat){
         <form action="" method="POST" enctype="multipart/form-data" >
             <p>
                 <label for="num_one">Enter Number One: </label>
-                <input id="num_one" name="number_one" value="<?= $_POST["number_one"];?>" type="number" placeholder="put (number)" required>
+                <input id="num_one" name="number_one" value="<?php echo @$_POST["number_one"];?>" type="number" placeholder="put (number)" required>
             </p>
             <p>
                 <label for="num_two">Enter Number two: </label>
-                <input id="num_two" name="number_two" value="<?= $_POST["number_two"];?>" type="number" placeholder="put (number)" required>
+                <input id="num_two" name="number_two" value="<?php echo @$_POST["number_two"];?>" type="number" placeholder="put (number)" required>
             </p>
             <div class="btn">
                 <button name="amaliyat" value="+">+</button>
